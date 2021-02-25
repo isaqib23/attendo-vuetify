@@ -464,7 +464,106 @@
   </v-container>
 
     </div>
-     
+     <v-container> 
+   <v-row justify="center">
+    <v-expansion-panels flat>
+      <v-expansion-panel>
+        <v-expansion-panel-header >
+       <vs-button
+        class="shift"
+        :animate-inactive="successFace"
+        @click="handleClickFace"
+        :loading="loadingFace"
+        color="#FF8886"
+        transparent
+        gradient>
+        <v-icon color="#FF8886">
+          mdi-comment
+        </v-icon>
+        {{ successFace ? 'Hide Comment' : 'Show Comment' }}
+      </vs-button>
+        </v-expansion-panel-header>
+        <v-expansion-panel-content>
+         <v-divider></v-divider>
+        <v-row>
+            <v-avatar class="user-comment-img"> 
+            <img
+              src="../assets/comment-user.png"
+              alt="John">
+             </v-avatar>
+        <v-col
+          md="2"
+          sm="4">
+        <h3 class="comment-user-name">
+        <span>Jane Smith</span>
+        <p class="post-status">
+              12 minutes ago </p>
+       </h3>
+      </v-col>
+  <v-col
+  md="7"
+  sm="7">
+  <p>
+    Lorem ipsum, or lipsum as it is sometimes known, is dummy text.
+    Lorem ipsum, or lipsum as it is sometimes known, is dummy text.
+  </p>
+  </v-col>
+  <v-btn
+        class="ma-1"
+        outlined
+        fab
+        small
+        color="green">
+      <v-icon
+        color="green">
+        mdi-pencil
+      </v-icon>
+    </v-btn>
+    <v-btn  
+        class="ma-1"
+        fab
+        small
+        color="#fff">
+      <v-icon
+        color="#FF0000">
+        mdi-delete
+      </v-icon>
+    </v-btn>
+</v-row>
+ <v-container>
+        <v-divider></v-divider>
+          <v-row>
+              <v-avatar class="comment-img">
+            <img
+              src="../assets/user.png"
+              alt="John">
+             </v-avatar>
+            <v-col
+              cols="12"
+              md="10"
+              sm="6">
+        <v-container> <v-text-field
+            v-model="message"
+            outlined
+            color="#FF8886"
+            clear-icon="mdi-close-circle"
+            clearable
+            label="Write a Comment..."
+            type="text"
+            @click:append="toggleMarker"
+            @click:append-outer="sendMessage"
+            @click:prepend="changeIcon"
+            @click:clear="clearMessage"
+            dense>
+            </v-text-field></v-container>
+        </v-col>
+          </v-row>
+      </v-container>  
+        </v-expansion-panel-content>
+      </v-expansion-panel>
+    </v-expansion-panels>
+  </v-row>
+ </v-container>
    </v-app>
 
 </template>
@@ -474,6 +573,11 @@
     data () { 
       
   return {
+     sending: false,
+        success: false,
+
+        loadingFace: false,
+        successFace: false,
     active: 0,
      alignments: [
         'start',
@@ -495,7 +599,73 @@
           },
         ],
       }
-    }
+    },
+     watch: {
+  
+      isUpdating (val) {
+        if (val) {
+          setTimeout(() => (this.isUpdating = false), 3000)
+        }
+      },
+      loader () {
+        const l = this.loader
+        this[l] = !this[l]
+
+        setTimeout(() => (this[l] = false), 3000)
+
+        this.loader = null
+      },
+  },
+
+    
+
+   computed: {
+      icon () {
+        return this.icons[this.iconIndex]
+      },
+   },
+
+    methods: {
+       handleClick() {
+          this.sending = true
+
+          setTimeout(() => {
+            this.sending = false
+            this.success = !this.success
+          }, 2000);
+        },
+        handleClickFace() {
+          this.loadingFace = true
+
+          setTimeout(() => {
+            this.loadingFace = false
+            this.successFace = !this.successFace
+          }, 2000);
+        },
+        
+      toggleMarker () {
+        this.marker = !this.marker
+      },
+      sendMessage () {
+        this.resetIcon()
+        this.clearMessage()
+      },
+      clearMessage () {
+        this.message = ''
+      },
+      resetIcon () {
+        this.iconIndex = 0
+      },
+      changeIcon () {
+        this.iconIndex === this.icons.length - 1
+          ? this.iconIndex = 0
+          : this.iconIndex++
+      },
+       remove (item) {
+        const index = this.friends.indexOf(item.name)
+        if (index >= 0) this.friends.splice(index, 1)
+      },
+    },
   }
 </script>
 <style>
@@ -516,9 +686,6 @@
   }
   .slider{
     width: 1000px;
-  }
-  .v-application p{
-        margin-bottom: 0px !important;
   }
   .user-img{
      margin-top: 8px !important;
@@ -547,4 +714,34 @@
   .annual-title{
     margin-right: 390px;
   }
+  .user-img{
+  margin-top: 8px;
+  margin-left: 14px;
+  width: 40px !important;
+  height: 40px !important;
+}
+.user-comment-img{
+  margin-top: 15px;
+  margin-left: 30px;
+  width: 40px !important;
+  height: 40px !important;
+}
+.comment-img{
+  width: 40px !important;
+  height: 40px !important;
+  margin-left: 27px;
+  margin-top: 20px;
+}
+.user-name{
+  margin-top: 9px;
+  margin-left: 20px;
+  color: #FF8886;
+}
+.comment-user-name{
+   margin-top: 1px;
+   color:#FF8886;
+}
+.users{
+  margin-top: 10px;
+}
 </style>
