@@ -2,10 +2,15 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import dashboard from '../components/Dashboard.vue'
 import profile from '../components/profile.vue'
+import vuetify from '../plugins/vuetify'
 
 
 
 Vue.use(Router)
+Vue.use(VueRouter)
+vue.use(dashboard)
+vue.use(profile)
+vue.use(vuetify)
 
 export default new Router({
   mode: 'history',
@@ -23,24 +28,3 @@ export default new Router({
  },
   ]
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

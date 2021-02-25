@@ -1,9 +1,8 @@
 
-
 export default  ([
     {
         path      : '/login',
-        name      : 'Login',
+        name      : 'login',
         component : require('../components/login.vue').default
     },
     {
@@ -14,74 +13,70 @@ export default  ([
             {
                 path      : '/dashboard',
                 name      : 'dashbaord',
-                component : require('../components/index.vue').default
+                component : require('../components/shifts.vue').default,
             },
             {
-                path      : '/add-events',
-                name      : 'add-events',
-                component : require('../components/add-events.vue').default
+                path      : '/tasks',
+                name      : 'tasks',
+                component : require('../components/tasks.vue').default,
             },
             {
-                path      : '/events',
-                name      : 'events',
-                component : require('../components/events.vue').default
+                path      : '/location',
+                name      : 'location',
+                component : require('../components/location.vue').default,
             },
             {
                 path      : '/analytics',
                 name      : 'analytics',
-                component : require('../components/analytics.vue').default
+                component : require('../components/analytics.vue').default,
             },
             {
-                path      : '/on-site_user',
-                name      : 'on-site_user',
-                component : require('../components/on-site_user.vue').default
+                path      : '/Events',
+                name      : 'events',
+                component : require('../components/Events.vue').default,
             },
             {
-                path      : '/organization',
-                name      : 'organization',
-                component : require('../components/organization.vue').default
+                path      : '/timesheets',
+                name      : 'timesheets',
+                component : require('../components/timesheets.vue').default,
             },
             {
                 path      : '/organization-guests',
-                name      : 'organization-guests',
-                component : require('../components/organization-guests.vue').default
+                name      : 'profile',
+                component : require('../components/profile.vue').default,
             },
             {
                 path      : '/exhibitors',
                 name      : 'exhibitors',
-                component : require('../components/exhibitors.vue').default
+                component : require('../components/exhibitors.vue').default,
             },
             {
-                path      : '/messages',
-                name      : 'messages',
-                component : require('../components/messages.vue').default
+                path      : '/people',
+                name      : 'people',
+                component : require('../components/people.vue').default,
             },
             {
                 path      : '/notifications',
                 name      : 'notifications',
-                component : require('../components/notifications.vue').default
+                component : require('../components/notifications.vue').default,
             },
             {
-                path      : '/profile',
-                name      : 'profile',
-                component : require('../components/profile.vue').default
+                path      : '/new',
+                name      : 'new',
+                component : require('../components/new.vue').default,
             },
             {
                 path      : '/setting',
                 name      : 'setting',
-                component : require('../components/setting.vue').default
+                component : require('../components/setting.vue').default,
             },
             {
                 path      : '/Popup',
                 name      : 'Popup',
-                component : require('../components/Popup.vue').default
+                component : require('../components/Popup.vue').default,
             }
         ]
 
     },
     
 ])
-
-
-
-

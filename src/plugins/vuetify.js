@@ -4,7 +4,9 @@ import Vuetify from 'vuetify/lib';
 Vue.use(Vuetify);
 
 export default new Vuetify({
-    iconfont:'md',
+    icons: {
+        iconfont: 'mdi',
+      },
     theme:{
         primary:'#FFC400',
         success:'#00E676',

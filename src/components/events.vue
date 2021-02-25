@@ -1,634 +1,550 @@
 <template>
-<div class="events">
-   <v-app class="grey lighten-4">
-      <v-contan class="mx-12 mb-4">
-     <h1 class="subheading grey--text">Events</h1>
-        <v-container class="my-6">
-          <v-layout row>
-            <v-flex xs12 md4>
-                    <v-card
-                    class="mx-auto"
-                    max-width="400"
-                  >
-                    <v-img
-                      class="white--text align-end"
-                      height="200px"
-                      src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                    >
-                      <v-card-title>Top 10 Australian beaches</v-card-title>
-                    </v-img>
-
-                    <v-card-subtitle class="pb-0">Number 10</v-card-subtitle>
-
-                    <v-card-text class="text--primary">
-                      <div>Whitehaven Beach</div>
-
-                      <div>Whitsunday Island, Whitsunday Islands</div>
-                    </v-card-text>
-
-                    <v-card-actions>
-                      <v-btn
-                        color="orange"
-                        text
-                      >
-                        Share
-                      </v-btn>
-
-                      <v-btn
-                        color="orange"
-                        text
-                      >
-                        Explore
-                      </v-btn>
-                    </v-card-actions>
-                  </v-card>
-            </v-flex>
-             <v-flex xs12 md3>
-                    <v-card
-                    class="mx-auto"
-                    max-width="400"
-                  >
-                    <v-img
-                      class="white--text align-end"
-                      height="200px"
-                      src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                    >
-                      <v-card-title>Top 10 Australian beaches</v-card-title>
-                    </v-img>
-
-                    <v-card-subtitle class="pb-0">Number 10</v-card-subtitle>
-
-                    <v-card-text class="text--primary">
-                      <div>Whitehaven Beach</div>
-
-                      <div>Whitsunday Island, Whitsunday Islands</div>
-                    </v-card-text>
-
-                    <v-card-actions>
-                      <v-btn
-                        color="orange"
-                        text
-                      >
-                        Share
-                      </v-btn>
-
-                      <v-btn
-                        color="orange"
-                        text
-                      >
-                        Explore
-                      </v-btn>
-                    </v-card-actions>
-                  </v-card>
-            </v-flex>
-             <v-flex xs12 md4>
-                    <v-card
-                    class="mx-auto"
-                    max-width="400"
-                  >
-                    <v-img
-                      class="white--text align-end"
-                      height="200px"
-                      src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                    >
-                      <v-card-title>Top 10 Australian beaches</v-card-title>
-                    </v-img>
-
-                    <v-card-subtitle class="pb-0">Number 10</v-card-subtitle>
-
-                    <v-card-text class="text--primary">
-                      <div>Whitehaven Beach</div>
-
-                      <div>Whitsunday Island, Whitsunday Islands</div>
-                    </v-card-text>
-
-                    <v-card-actions>
-                      <v-btn
-                        color="orange"
-                        text
-                      >
-                        Share
-                      </v-btn>
-
-                      <v-btn
-                        color="orange"
-                        text
-                      >
-                        Explore
-                      </v-btn>
-                    </v-card-actions>
-                  </v-card>
-            </v-flex>
-          </v-layout>
-           <v-layout row mt-12>
-             <v-flex xs12 md4>
-                <v-card
-                class="mx-auto"
-                max-width="400"
-              >
-                <v-img
-                  src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-                  height="200px"
-                ></v-img>
-
-                <v-card-title>
-                  Top western road trips
-                </v-card-title>
-
-                <v-card-subtitle>
-                  1,000 miles of wonder
-                </v-card-subtitle>
-
-                <v-card-actions>
-                  <v-btn text>Share</v-btn>
-
-                  <v-btn
-                    color="purple"
-                    text
-                  >
-                    Explore
-                  </v-btn>
-
-                  <v-spacer></v-spacer>
-
-                  <v-btn
-                    icon
-                    @click="show = !show"
-                  >
-                    <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                  </v-btn>
-                </v-card-actions>
-
-                <v-expand-transition>
-                  <div v-show="show">
-                    <v-divider></v-divider>
-
-                    <v-card-text>
-                      I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
-                    </v-card-text>
-                  </div>
-                </v-expand-transition>
-              </v-card>
-             </v-flex>
-             <v-flex xs12 md3>
-                <v-card
-                class="mx-auto"
-                max-width="400"
-              >
-                <v-img
-                  src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-                  height="200px"
-                ></v-img>
-
-                <v-card-title>
-                  Top western road trips
-                </v-card-title>
-
-                <v-card-subtitle>
-                  1,000 miles of wonder
-                </v-card-subtitle>
-
-                <v-card-actions>
-                  <v-btn text>Share</v-btn>
-
-                  <v-btn
-                    color="purple"
-                    text
-                  >
-                    Explore
-                  </v-btn>
-
-                  <v-spacer></v-spacer>
-
-                  <v-btn
-                    icon
-                    @click="show = !show"
-                  >
-                    <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                  </v-btn>
-                </v-card-actions>
-
-                <v-expand-transition>
-                  <div v-show="show">
-                    <v-divider></v-divider>
-
-                    <v-card-text>
-                      I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
-                    </v-card-text>
-                  </div>
-                </v-expand-transition>
-              </v-card>
-             </v-flex>
-             <v-flex xs12 md4>
-                <v-card
-                class="mx-auto"
-                max-width="400"
-              >
-                <v-img
-                  src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-                  height="200px"
-                ></v-img>
-
-                <v-card-title>
-                  Top western road trips
-                </v-card-title>
-
-                <v-card-subtitle>
-                  1,000 miles of wonder
-                </v-card-subtitle>
-
-                <v-card-actions>
-                  <v-btn text>Share</v-btn>
-
-                  <v-btn
-                    color="purple"
-                    text
-                  >
-                    Explore
-                  </v-btn>
-
-                  <v-spacer></v-spacer>
-
-                  <v-btn
-                    icon
-                    @click="show = !show"
-                  >
-                    <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                  </v-btn>
-                </v-card-actions>
-
-                <v-expand-transition>
-                  <div v-show="show">
-                    <v-divider></v-divider>
-
-                    <v-card-text>
-                      I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
-                    </v-card-text>
-                  </div>
-                </v-expand-transition>
-              </v-card>
-             </v-flex>
-           </v-layout>
-           <v-layout row mt-12>
-             <v-flex xs12 md4>
-         <v-card
-              :loading="loading"
-              class="mx-auto my-12"
-              max-width="400"
-            >
-              <v-img
-                height="250"
-                src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
-              ></v-img>
-
-              <v-card-title>Cafe Badilico</v-card-title>
-
-              <v-card-text>
-                <v-row
-                  align="center"
-                  class="mx-0"
-                >
-                  <v-rating
-                    :value="4.5"
-                    color="amber"
-                    dense
-                    half-increments
-                    readonly
-                    size="14"
-                  ></v-rating>
-
-                  <div class="grey--text ml-4">4.5 (413)</div>
-                </v-row>
-
-                <div class="my-4 subtitle-1 black--text">
-                  $ • Italian, Cafe
-                </div>
-
-                <div>Small plates, salads & sandwiches an inteimate setting with 12 indoor seats plus patio seating.</div>
-              </v-card-text>
-
-              <v-divider class="mx-4"></v-divider>
-
-              <v-card-title>Tonight's availability</v-card-title>
-
-              <v-card-text>
-                <v-chip-group
-                  v-model="selection"
-                  active-class="deep-purple accent-4 white--text"
-                  column
-                >
-                  <v-chip>5:30PM</v-chip>
-
-                  <v-chip>7:30PM</v-chip>
-
-                  <v-chip>8:00PM</v-chip>
-
-                  <v-chip>9:00PM</v-chip>
-                </v-chip-group>
-              </v-card-text>
-
-              <v-card-actions>
-                <v-btn
-                  color="deep-purple accent-4"
-                  text
-                  @click="reserve"
-                >
-                  Reserve
-                </v-btn>
-              </v-card-actions>
-            </v-card>
-             </v-flex>
-
-               <v-flex xs12 md3>
-         <v-card
-              :loading="loading"
-              class="mx-auto my-12"
-              max-width="400"
-            >
-              <v-img
-                height="250"
-                src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
-              ></v-img>
-
-              <v-card-title>Cafe Badilico</v-card-title>
-
-              <v-card-text>
-                <v-row
-                  align="center"
-                  class="mx-0"
-                >
-                  <v-rating
-                    :value="4.5"
-                    color="amber"
-                    dense
-                    half-increments
-                    readonly
-                    size="14"
-                  ></v-rating>
-
-                  <div class="grey--text ml-4">4.5 (413)</div>
-                </v-row>
-
-                <div class="my-4 subtitle-1 black--text">
-                  $ • Italian, Cafe
-                </div>
-
-                <div>Small plates, salads & sandwiches an inteimate setting with 12 indoor seats plus patio seating.</div>
-              </v-card-text>
-
-              <v-divider class="mx-4"></v-divider>
-
-              <v-card-title>Tonight's availability</v-card-title>
-
-              <v-card-text>
-                <v-chip-group
-                  v-model="selection"
-                  active-class="deep-purple accent-4 white--text"
-                  column
-                >
-                  <v-chip>5:30PM</v-chip>
-
-                  <v-chip>7:30PM</v-chip>
-
-                  <v-chip>8:00PM</v-chip>
-
-                  <v-chip>9:00PM</v-chip>
-                </v-chip-group>
-              </v-card-text>
-
-              <v-card-actions>
-                <v-btn
-                  color="deep-purple accent-4"
-                  text
-                  @click="reserve"
-                >
-                  Reserve
-                </v-btn>
-              </v-card-actions>
-            </v-card>
-             </v-flex>
-
-               <v-flex xs12 md4>
-         <v-card
-              :loading="loading"
-              class="mx-auto my-12"
-              max-width="400"
-            >
-              <v-img
-                height="250"
-                src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
-              ></v-img>
-
-              <v-card-title>Cafe Badilico</v-card-title>
-
-              <v-card-text>
-                <v-row
-                  align="center"
-                  class="mx-0"
-                >
-                  <v-rating
-                    :value="4.5"
-                    color="amber"
-                    dense
-                    half-increments
-                    readonly
-                    size="14"
-                  ></v-rating>
-
-                  <div class="grey--text ml-4">4.5 (413)</div>
-                </v-row>
-
-                <div class="my-4 subtitle-1 black--text">
-                  $ • Italian, Cafe
-                </div>
-
-                <div>Small plates, salads & sandwiches an inteimate setting with 12 indoor seats plus patio seating.</div>
-              </v-card-text>
-
-              <v-divider class="mx-4"></v-divider>
-
-              <v-card-title>Tonight's availability</v-card-title>
-
-              <v-card-text>
-                <v-chip-group
-                  v-model="selection"
-                  active-class="deep-purple accent-4 white--text"
-                  column
-                >
-                  <v-chip>5:30PM</v-chip>
-
-                  <v-chip>7:30PM</v-chip>
-
-                  <v-chip>8:00PM</v-chip>
-
-                  <v-chip>9:00PM</v-chip>
-                </v-chip-group>
-              </v-card-text>
-
-              <v-card-actions>
-                <v-btn
-                  color="deep-purple accent-4"
-                  text
-                  @click="reserve"
-                >
-                  Reserve
-                </v-btn>
-              </v-card-actions>
-            </v-card>
-             </v-flex>
-           </v-layout>
-           <v-layout row mt-12>
-          <v-flex xs12 md4>
-            <v-card
-              max-width="400"
-              class="mx-auto"
-            >
-              <v-list-item>
-                <v-list-item-avatar color="grey"></v-list-item-avatar>
-                <v-list-item-content>
-                  <v-list-item-title class="headline">Our Changing Planet</v-list-item-title>
-                  <v-list-item-subtitle>by Kurt Wagner</v-list-item-subtitle>
-                </v-list-item-content>
-              </v-list-item>
-
-              <v-img
-                src="https://cdn.vuetifyjs.com/images/cards/mountain.jpg"
-                height="194"
-              ></v-img>
-
-              <v-card-text>
-                Visit ten places on our planet that are undergoing the biggest changes today.
-              </v-card-text>
-
-              <v-card-actions>
-                <v-btn
-                  text
-                  color="deep-purple accent-4"
-                >
-                  Read
-                </v-btn>
-                <v-btn
-                  text
-                  color="deep-purple accent-4"
-                >
-                  Bookmark
-                </v-btn>
-                <v-spacer></v-spacer>
-                <v-btn icon>
-                  <v-icon>mdi-heart</v-icon>
-                </v-btn>
-                <v-btn icon>
-                  <v-icon>mdi-share-variant</v-icon>
-                </v-btn>
-              </v-card-actions>
-            </v-card>
-              </v-flex>
-                <v-flex xs12 md3>
-                <v-card
-              max-width="400"
-              class="mx-auto"
-            >
-              <v-list-item>
-                <v-list-item-avatar color="grey"></v-list-item-avatar>
-                <v-list-item-content>
-                  <v-list-item-title class="headline">Our Changing Planet</v-list-item-title>
-                  <v-list-item-subtitle>by Kurt Wagner</v-list-item-subtitle>
-                </v-list-item-content>
-              </v-list-item>
-
-              <v-img
-                src="https://cdn.vuetifyjs.com/images/cards/mountain.jpg"
-                height="194"
-              ></v-img>
-
-              <v-card-text>
-                Visit ten places on our planet that are undergoing the biggest changes today.
-              </v-card-text>
-
-              <v-card-actions>
-                <v-btn
-                  text
-                  color="deep-purple accent-4"
-                >
-                  Read
-                </v-btn>
-                <v-btn
-                  text
-                  color="deep-purple accent-4"
-                >
-                  Bookmark
-                </v-btn>
-                <v-spacer></v-spacer>
-                <v-btn icon>
-                  <v-icon>mdi-heart</v-icon>
-                </v-btn>
-                <v-btn icon>
-                  <v-icon>mdi-share-variant</v-icon>
-                </v-btn>
-              </v-card-actions>
-            </v-card>
-        </v-flex>
-              <v-flex xs12 md4>
-              <v-card
-              max-width="400"
-              class="mx-auto"
-            >
-              <v-list-item>
-                <v-list-item-avatar color="grey"></v-list-item-avatar>
-                <v-list-item-content>
-                  <v-list-item-title class="headline">Our Changing Planet</v-list-item-title>
-                  <v-list-item-subtitle>by Kurt Wagner</v-list-item-subtitle>
-                </v-list-item-content>
-              </v-list-item>
-
-              <v-img
-                src="https://cdn.vuetifyjs.com/images/cards/mountain.jpg"
-                height="194"
-              ></v-img>
-
-              <v-card-text>
-                Visit ten places on our planet that are undergoing the biggest changes today.
-              </v-card-text>
-
-              <v-card-actions>
-                <v-btn
-                  text
-                  color="deep-purple accent-4"
-                >
-                  Read
-                </v-btn>
-                <v-btn
-                  text
-                  color="deep-purple accent-4"
-                >
-                  Bookmark
-                </v-btn>
-                <v-spacer></v-spacer>
-                <v-btn icon>
-                  <v-icon>mdi-heart</v-icon>
-                </v-btn>
-                <v-btn icon>
-                  <v-icon>mdi-share-variant</v-icon>
-                </v-btn>
-               </v-card-actions>
-              </v-card>
-            </v-flex>
-           </v-layout>
-         </v-container>
-        </v-contan>
-      </v-app>
-   </div>
-</template> 
+   <v-app >
+ 
+<h1 class="subheading grey--text"><span class="page-heading">Event Details</span></h1>
+<v-row>
+<h2 class="annual-title">Annual College of arts meetup & speech competition</h2>
+
+        <vs-button
+       gradient
+        color="#FF8886"
+        :active="active == 0"
+        @click="active = 0">
+        <v-icon color="#FFFFFF">
+          mdi-share-all
+        </v-icon>
+        Share Event
+      </vs-button>
+ 
+</v-row>
+<v-row class="slider-row">
+ 
+    <v-card class="slider" flat>
+ <v-carousel :show-arrows="false">
+    <v-carousel-item
+      v-for="(item,i) in items"
+      :key="i"
+      :src="item.src"
+    ></v-carousel-item>
+  </v-carousel>
+  </v-card>
+ 
+  </v-row>
+    <div>
+     <v-container class="grey lighten-5">
+    <v-row no-gutters>
+      <v-col order="last">
+       
+          <v-row>
+      <!-- <vs-avatar class="user-img" >
+        <img src="../assets/avatar-2.png" alt="">
+      </vs-avatar> -->
+      <v-icon class="Events" size="50px" color="#FF8886 ">
+        mdi-replay
+      </v-icon>
+       <p
+        class="users"
+          color="rgb(85, 85, 202)"
+          text>
+          <span class="username"> <b> Replies </b> <br></span>
+           <span class="user-role">50</span>
+          </p>
+      </v-row>
+       
+      </v-col>
+      <v-col>
+      
+          <v-row>
+      <!-- <vs-avatar class="user-img" >
+        <img src="../assets/avatar-2.png" alt="">
+      </vs-avatar> -->
+      <v-icon class="Events" size="50px" color="#FF8886 ">
+        mdi-book-multiple
+      </v-icon>
+       <p
+        class="users"
+          color="rgb(85, 85, 202)"
+          text>
+          <span class="username"> <b>  Logbook </b> <br></span>
+           <span class="user-role">25/300</span>
+          </p>
+      </v-row>
+       
+      </v-col>
+      <v-col order="first">
+       
+       <v-row>
+      <!-- <vs-avatar class="user-img" >
+        <img src="../assets/avatar-2.png" alt="">
+      </vs-avatar> -->
+      <v-icon class="Events" size="50px" color="#FF8886 ">
+        mdi-calendar
+      </v-icon>
+       <p
+        class="users"
+          color="rgb(85, 85, 202)"
+          text>
+          <span class="username"> <b> Event Start In </b><br></span>
+           <span class="user-role">Saturday August 3, 2:00pm - 8:00 pm BST</span>
+          </p>
+      </v-row>
+   
+      </v-col>
+    </v-row>
+  </v-container>
+
+    </div>
+    <div>
+     <v-container class="grey lighten-5">
+    <v-row no-gutters>
+      <v-col order="last">
+       
+          <v-row>
+      <!-- <vs-avatar class="user-img" >
+        <img src="../assets/avatar-2.png" alt="">
+      </vs-avatar> -->
+      <v-icon class="Events" size="50px" color="#FF8886 ">
+        mdi-file-document-multiple-outline 
+      </v-icon>
+       <p
+        class="users"
+          color="green"
+          text>
+          <span class="username"> <b>  Feedback Form </b> <br></span>
+           <span class="user-role">25/300</span>
+          </p>
+      </v-row>
+       
+      </v-col>
+      <v-col>
+      
+          <v-row>
+      <!-- <vs-avatar class="user-img" >
+        <img src="../assets/avatar-2.png" alt="">
+      </vs-avatar> -->
+      <v-icon class="Events" size="50px" color="#FF8886 ">
+        mdi-account-group
+      </v-icon>
+       <p
+        class="users"
+          color="green"
+          text>
+          <span class="username"> <b>  Exhibitors </b> <br></span>
+           <span class="user-role">80</span>
+          </p>
+      </v-row>
+       
+      </v-col>
+      <v-col order="first">
+       
+       <v-row>
+      <!-- <vs-avatar class="user-img" >
+        <img src="../assets/avatar-2.png" alt="">
+      </vs-avatar> -->
+      <v-icon class="Events" size="50px" color="#FF8886 ">
+        mdi-map-marker
+      </v-icon>
+       <p
+        class="users"
+          color="green"
+          text>
+          <span class="username"> <b>  Auckland </b> <br></span>
+           <span class="user-role">NCA Building, Downtown Street, Auckland</span>
+          </p>
+      </v-row>
+   
+      </v-col>
+    </v-row>
+  </v-container>
+
+    </div>
+<v-dividier></v-dividier>
+   <h2>Organization</h2>
+   <v-col
+        cols="12"
+        sm="11"
+        md="9">
+        <v-row>
+        <vs-avatar 
+        size="90">
+      <img src="../assets/avatar-1.jpg">
+      </vs-avatar>
+       <h3 class="user-roles"><b>Org000000</b><br>Event Organizer</h3>
+      <v-spacer></v-spacer>
+        <v-btn
+      class="chat"
+      fab
+      dark
+      large
+      color="#FF8886">
+      <v-icon dark>
+        mdi-chat
+      </v-icon>
+    </v-btn>
+      </v-row>
+      </v-col>
+  
+      <h3>Event Discriptions</h3>
+          <br>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+      since the 1500s, when an unknown <br> printer took a galley of type and scrambled it  to make a type  specimen book. It has survived not only 
+      five centuries, 
+      </p>
+      <br>
+<h3>Add-On</h3>
+<div>
+     <v-container class="grey lighten-5">
+    <v-row no-gutters>
+      <v-col order="last">
+          <v-row>
+      <!-- <vs-avatar class="user-img" >
+        <img src="../assets/avatar-2.png" alt="">
+      </vs-avatar> -->
+      <v-icon class="Events" size="50px" color="#FF8886 ">
+        mdi-check
+      </v-icon>
+       <p
+        class="users"
+          color="green"
+          text>
+          <span class="username"> <b> Smart <br> Check-In</b> <br></span>
+          </p>
+      </v-row>
+       
+      </v-col>
+      <v-col>
+      
+          <v-row>
+      <!-- <vs-avatar class="user-img" >
+        <img src="../assets/avatar-2.png" alt="">
+      </vs-avatar> -->
+      <v-icon class="Events" size="50px" color="#FF8886 ">
+        mdi-download
+      </v-icon>
+       <p
+        class="users"
+          color="green"
+          text>
+          <span class="username"> <b> Buy/Download<br> Event Tickets</b> <br></span>
+          </p>
+      </v-row>
+       
+      </v-col>
+      <v-col order="first">
+       
+       <v-row>
+      <!-- <vs-avatar class="user-img" >
+        <img src="../assets/avatar-2.png" alt="">
+      </vs-avatar> -->
+      <v-icon class="Events" size="50px" color="#FF8886 ">
+        mdi-account-box-multiple-outline
+      </v-icon>
+       <p
+        class="users"
+          color="green"
+          text>
+          <span class="username"> <b>  View Interested / <br>Attendees Profile</b> <br></span>
+           
+          </p>
+      </v-row>
+   
+      </v-col>
+    </v-row>
+  </v-container>
+
+    </div>
+    <div>
+     <v-container class="grey lighten-5">
+    <v-row no-gutters>
+      <v-col order="last">
+       
+          <v-row>
+      <!-- <vs-avatar class="user-img" >
+        <img src="../assets/avatar-2.png" alt="">
+      </vs-avatar> -->
+      <v-icon class="Events" size="50px" color="#FF8886 ">
+        mdi-account-group
+      </v-icon>
+       <p
+        class="users"
+          color="green"
+          text>
+          <span class="username"> <b> Exhibitors <br>participations</b> <br></span>
+          </p>
+      </v-row>
+       
+      </v-col>
+      <v-col>
+      
+          <v-row>
+      <!-- <vs-avatar class="user-img" >
+        <img src="../assets/avatar-2.png" alt="">
+      </vs-avatar> -->
+      <v-icon class="Events" size="50px" color="#FF8886 ">
+        mdi-calendar
+      </v-icon>
+       <p
+        class="users"
+          color="green"
+          text>
+          <span class="username"> <b> Event<br> Schedule</b> <br></span>
+          </p>
+      </v-row>
+       
+      </v-col>
+      <v-col order="first">
+       
+       <v-row>
+      <!-- <vs-avatar class="user-img" >
+        <img src="../assets/avatar-2.png" alt="">
+      </vs-avatar> -->
+      <v-icon class="Events" size="50px" color="#FF8886 ">
+        mdi-tag
+      </v-icon>
+       <p
+        class="users"
+          color="green"
+          text>
+          <span class="username"> <b>  Featured / <br>Event tag</b> <br></span>
+           
+          </p>
+      </v-row>
+   
+      </v-col>
+    </v-row>
+  </v-container>
+
+    </div>
+    <div>
+     <v-container class="grey lighten-5">
+    <v-row no-gutters>
+      <v-col order="last">
+       
+          <v-row>
+      <!-- <vs-avatar class="user-img" >
+        <img src="../assets/avatar-2.png" alt="">
+      </vs-avatar> -->
+      <v-icon class="Events" size="50px" color="#FF8886 ">
+        mdi-lock
+      </v-icon>
+       <p
+        class="users"
+          color="green"
+          text>
+          <span class="username"> <b> Secret <br>Events</b> <br></span>
+          </p>
+      </v-row>
+       
+      </v-col>
+      <v-col>
+      
+          <v-row>
+      <!-- <vs-avatar class="user-img" >
+        <img src="../assets/avatar-2.png" alt="">
+      </vs-avatar> -->
+      <v-icon class="Events" size="50px" color="#FF8886 ">
+        mdi-certificate
+      </v-icon>
+       <p
+        class="users"
+          color="green"
+          text>
+          <span class="username"> <b> Event<br> Certificates</b> <br></span>
+          </p>
+      </v-row>
+       
+      </v-col>
+      <v-col order="first">
+       
+       <v-row>
+      <!-- <vs-avatar class="user-img" >
+        <img src="../assets/avatar-2.png" alt="">
+      </vs-avatar> -->
+      <v-icon class="Events" size="50px" color="#FF8886 ">
+        mdi-forward
+      </v-icon>
+       <p
+        class="users"
+          color="green"
+          text>
+          <span class="username"> <b>  Social media / <br>Share</b> <br></span>
+           
+          </p>
+      </v-row>
+   
+      </v-col>
+    </v-row>
+  </v-container>
+
+    </div>
+    <div>
+     <v-container class="grey lighten-5">
+    <v-row no-gutters>
+      <v-col order="last">
+       
+          <v-row>
+      <!-- <vs-avatar class="user-img" >
+        <img src="../assets/avatar-2.png" alt="">
+      </vs-avatar> -->
+      <v-icon class="Events" size="50px" color="#FF8886 ">
+        mdi-graphql
+      </v-icon>
+       <p
+        class="users"
+          color="green"
+          text>
+          <span class="username"> <b> CPD <br>maintenances</b> <br></span>
+          </p>
+      </v-row>
+       
+      </v-col>
+      <v-col>
+      
+          <v-row>
+      <!-- <vs-avatar class="user-img" >
+        <img src="../assets/avatar-2.png" alt="">
+      </vs-avatar> -->
+      <v-icon class="Events" size="50px" color="#FF8886 ">
+        mdi-comment-quote
+      </v-icon>
+       <p
+        class="users"
+          color="green"
+          text>
+          <span class="username"> <b> Get Instant <br> Event Feedback</b> <br></span>
+          </p>
+      </v-row>
+       
+      </v-col>
+      <v-col order="first">
+       
+       <v-row>
+      <!-- <vs-avatar class="user-img" >
+        <img src="../assets/avatar-2.png" alt="">
+      </vs-avatar> -->
+      <v-icon class="Events" size="50px" color="#FF8886 ">
+        mdi-comment
+      </v-icon>
+       <p
+        class="users"
+          color="green"
+          text>
+          <span class="username"> <b>  Get Instant / <br> Comments</b> <br></span>
+           
+          </p>
+      </v-row>
+   
+      </v-col>
+    </v-row>
+  </v-container>
+    </div>
+     <div>
+     <v-container class="grey lighten-5">
+    <v-row no-gutters>
+      <v-col order="first">
+       
+       <v-row>
+      <!-- <vs-avatar class="user-img" >
+        <img src="../assets/avatar-2.png" alt="">
+      </vs-avatar> -->
+      <v-icon class="Events" size="50px" color="#FF8886 ">
+        mdi-account-box-multiple-outline
+      </v-icon>
+       <p
+        class="users"
+          color="green"
+          text>
+          <span class="username"> <b>  Issue Events / <br> Tickets</b> <br></span>
+           
+          </p>
+      </v-row>
+   
+      </v-col>
+    </v-row>
+  </v-container>
+
+    </div>
+     
+   </v-app>
+
+</template>
 
 <script>
-export default {
-  name: 'Events',
-  data () {
-    
-      return {
-        show: false,
+  export default {
+    data () { 
+      
+  return {
+    active: 0,
+     alignments: [
+        'start',
+        'center',
+      
+      ],
+        items: [
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+          },
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+          },
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+          },
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+          },
+        ],
       }
-    },
-};
+    }
+  }
 </script>
+<style>
+.share{
+      margin-left: 750px;
+}
+ .bottom-gradient {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, transparent 72px);
+  }
 
+  .repeating-gradient {
+    background-image: repeating-linear-gradient(-45deg,
+                        rgba(255,0,0,.25),
+                        rgba(255,0,0,.25) 5px,
+                        rgba(0,0,255,.25) 5px,
+                        rgba(0,0,255,.25) 10px
+                      );
+  }
+  .slider{
+    width: 1000px;
+  }
+  .v-application p{
+        margin-bottom: 0px !important;
+  }
+  .user-img{
+     margin-top: 8px !important;
+  }
+  .username{
+    color: rgb(85, 85, 202) !important;
+  }
+  .Events{
+    height: 65px;
+    width: 65px;
+  }
+  .user-roles{
+    margin-left: 20px;
+    margin-top: 20px;
+    color: rgb(85, 85, 202);
+  }
+  .user-role{
+    color: #9D9DA8;
+  }
+  .chat{
+    margin-top: 20px;
+  }
+  .slider-row{
+    margin-left: 105px !important;
+  }
+  .annual-title{
+    margin-right: 390px;
+  }
+</style>

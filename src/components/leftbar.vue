@@ -1,68 +1,52 @@
 <template>
-<v-navigation-drawer v-model="drawer"
+<v-navigation-drawer 
+     v-model="drawer"
      app 
      dark
-     fixed
-    >
-    
+     fixed>
+     <v-layout column align-center>
+        <v-flex class="mt-5">
+          <vs-avatar class="user-img" size="100"  >
+         <img  src="../assets/avatar-1.jpg">
+          </vs-avatar>
+          <h2 class="white--text" >john Deo</h2>
+        </v-flex>
+      </v-layout>
     <v-flex class="mt-4">
     </v-flex>
-  
       <v-list>
         <v-list-item
           v-for="item in items"
           :key="item.title"
           linka4
-          :to="item.route"
-        >
+          :to="item.route">
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>
-
           <v-list-item-content>
             <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
-      <template v-slot:append>
-        <div class="pa-2">
-          <v-btn block>Logout</v-btn>
-        </div>
-      </template>
-      
     </v-navigation-drawer>
 </template>
 <script>
-
 export default {
     props: ['drawer'],
   data () {
       return {
         items: [
-          { title: 'Dashboard', icon: 'mdi-windows', route: {name: 'dashbaord'} },
-          { title: 'Add Events', icon: 'mdi-account-box', route: {name:'add-events'} },
-          { title: 'Events', icon: 'mdi-account-box', route:{name:'events'} },
-          { title: 'Analytics', icon: 'mdi-chart-areaspline', route: {name:'analytics' } },
-          { title: 'On-site User', icon: 'mdi-account-multiple', route: {name:'on-site_user'} },
-          { title: 'Organization', icon: 'mdi-city', route: {name:'organization'} },
-          { title: 'Organization Guests', icon: 'mdi-account-supervisor-circle', route: {name:'organization-guests'} },
-          { title: 'Exhibotors', icon: 'mdi-account-supervisor', route: {name:'exhibitors'} },
-          { title: 'Messages', icon: 'mdi-comment-text', route: {name:'messages'} },
-          { title: 'Notification', icon: 'mdi-comment-alert', route: {name:'notifications'} },
-          { title: 'Profile', icon: 'mdi-account-circle', route: {name:'profile'} },
-          { title: 'Settings', icon: 'mdi-cogs', route: {name:'setting'} },
+          { title: 'Events', icon:'mdi-post', route: {name:'events'} },
+         
         ],
       }
    }
-  
 };
 </script>
-
 <style>
-.pa-2{background: #F7C598;
-}
-
+.pa-2{background:  #F7C598 ;}
 .v-navigation-drawer {
-  background: linear-gradient(45deg, #F7C598,#FF8886);
-}
+background-color: #FF8886;
+background-image: linear-gradient(0deg, #F7C598 0%, #FF8886 100%);}
+
 </style>

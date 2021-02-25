@@ -47,11 +47,9 @@
 
 <script>
  import db from '@/fb'
-
 export default {
     data () {
         return {
-
             title:'',
             content:'',
             person:'',
@@ -71,25 +69,20 @@ export default {
     },
      methods:{
         submit() {
-
-
           this.loading = true;
-
           const project = {
             title: this.title,
             content: this.content,
-            due: '7th jan 2020',
+            due: '25th December 2020',
             person:this.person,
             status: 'ongoing'
           }
-
           db.collection('projects').add(project).then(() =>{
             console.log('added to db')
             this.loading = false;
             this.dialog = false;
             this.$emit('projectAdded')
           })
-
         
       }
     }
@@ -100,4 +93,4 @@ export default {
            .pop-colour {
                 background:#FF8886 !important;
             }
-</style>
+</style> 
